@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangelium Vitae - Capítulo 1: Homicidio y Suicidio en El Salvador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #8e0000;
+            --primary-dark: #6a0000;
+            --secondary-color: #f8f8f8;
+            --accent-color: #d4a76a;
+            --accent-dark: #b38d5a;
+            --text-color: #333;
+            --light-text: #777;
+            --white: #ffffff;
+            --gray-light: #e9ecef;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Merriweather', Georgia, serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-dark);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            background-image: url('https://www.vice.com/wp-content/uploads/sites/2/2017/11/1510599023471-12IMG_5351-scaled.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+        
+        .header-btn:hover {
+            background-color: var(--accent-dark);
+            transform: translateY(-3px);
+            color: var(--white);
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 4rem 0;
+        }
+        
+        section {
+            margin-bottom: 4rem;
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--accent-color);
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background-color: var(--accent-dark);
+        }
+        
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+        
+        h4 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Quote Styles */
+        .quote {
+            font-style: italic;
+            padding: 2rem;
+            border-left: 5px solid var(--accent-color);
+            background-color: var(--gray-light);
+            margin: 2.5rem 0;
+            position: relative;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .quote::before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--accent-color);
+            opacity: 0.2;
+            position: absolute;
+            top: -1rem;
+            left: 1rem;
+            font-family: serif;
+        }
+        
+        .quote-source {
+            text-align: right;
+            font-weight: bold;
+            color: var(--light-text);
+            margin-top: 1rem;
+            font-style: normal;
+        }
+        
+        /* Image and Video Containers */
+        .media-container {
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .image-container {
+            display: inline-block;
+            max-width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+        }
+        
+        .image-container img {
+            transition: var(--transition);
+        }
+        
+        .image-container:hover img {
+            transform: scale(1.03);
+        }
+        
+        .image-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 3rem 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Lists */
+        .document-list {
+            margin: 2rem 0 2rem 3rem;
+        }
+        
+        .document-list li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .document-list li::before {
+            content: '•';
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        /* Stats Box */
+        .stats-box {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .stats-box h3 {
+            color: var(--white);
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .stat-value {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* El Salvador Section */
+        .salvador-section {
+            background-color: var(--gray-light);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .salvador-section h3 {
+            color: var(--primary-color);
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 3rem auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: var(--accent-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--white);
+            border: 3px solid var(--primary-color);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -10px;
+        }
+        
+        .right::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column a {
+            color: var(--gray-light);
+        }
+        
+        .footer-column a:hover {
+            color: var(--accent-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .left::after, .right::after {
+                left: 21px;
+            }
+            
+            .right {
+                left: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 4rem 0 3rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--primary-dark);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+                transition: var(--transition);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 1rem 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .quote {
+                padding: 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            header {
+                padding: 3rem 0 2rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            .header-btn {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Evangelium Vitae</h1>
+            <p class="subtitle">"La sangre de tu hermano clama a mí desde el suelo" - Homicidio y Suicidio en El Salvador</p>
+            <a href="#introduccion" class="header-btn">Explorar Contenido <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">EV Capítulo 1</div>
+            <ul class="nav-links">
+                <li><a href="#introduccion"><i class="fas fa-home"></i> Introducción</a></li>
+                <li><a href="#teologia"><i class="fas fa-bible"></i> Teología</a></li>
+                <li><a href="#moralidad"><i class="fas fa-balance-scale"></i> Moralidad</a></li>
+                <li><a href="#salvador"><i class="fas fa-globe-americas"></i> En El Salvador</a></li>
+                <li><a href="#soluciones"><i class="fas fa-hands-helping"></i> Soluciones</a></li>
+                <li><a href="#recursos"><i class="fas fa-book"></i> Recursos</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introducción -->
+        <section id="introduccion">
+            <h2>Introducción al Capítulo 1</h2>
+            
+            <div class="media-container">
+                <div class="image-container">
+                    <img src="data:image/jpeg;base64,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" alt="Caín y Abel por James Tissot">
+                    <p class="image-caption">Caín y Abel - Representación del primer homicidio en la Biblia (Génesis 4:8-10)</p>
+                </div>
+            </div>
+            
+            <p>El primer capítulo de la encíclica <em>Evangelium Vitae</em> (El Evangelio de la Vida), promulgada por San Juan Pablo II en 1995, lleva por título "La sangre de tu hermano clama a mí desde el suelo", tomado de Génesis 4:10. Este capítulo constituye un profundo análisis teológico y moral sobre los crímenes contra la vida humana, particularmente el homicidio y el suicidio.</p>
+            
+            <div class="quote">
+                "La vida humana es sagrada porque desde su inicio comporta 'la acción creadora de Dios' y permanece siempre en una especial relación con el Creador, su único fin. Solo Dios es el dueño de la vida desde su comienzo hasta su término: nadie, en ninguna circunstancia, puede atribuirse el derecho de matar de modo directo a un ser humano inocente."
+                <div class="quote-source">Evangelium Vitae, 53</div>
+            </div>
+            
+            <h3>Contexto Histórico de la Encíclica</h3>
+            <p><em>Evangelium Vitae</em> fue publicada en un momento histórico donde diversas amenazas contra la vida humana se estaban normalizando en el mundo: el aumento de abortos, la eutanasia, los homicidios y suicidios. El Papa Juan Pablo II, testigo de los horrores de la Segunda Guerra Mundial y de los regímenes totalitarios del siglo XX, ofrece esta encíclica como un faro de luz ante la "cultura de muerte" que se expandía.</p>
+            
+            <h3>Estructura del Capítulo</h3>
+            <ul class="document-list">
+                <li><strong>Fundamentación bíblica:</strong> Análisis del relato de Caín y Abel</li>
+                <li><strong>Teología de la vida:</strong> La vida como don sagrado de Dios</li>
+                <li><strong>Análisis del homicidio:</strong> Como ofensa a Dios y ruptura de la fraternidad</li>
+                <li><strong>Reflexión sobre el suicidio:</strong> Como rechazo de la soberanía divina</li>
+                <li><strong>Contraste cultural:</strong> Cultura de muerte vs. cultura de vida</li>
+            </ul>
+            
+            <div class="media-container">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7feM8ILlV-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="image-caption">Explicación sobre la visión católica de la vida humana</p>
+            </div>
+        </section>
+        
+        <!-- Teología -->
+        <section id="teologia">
+            <h2>Fundamentación Teológica</h2>
+            
+            <h3>1. La Vida como Don Divino</h3>
+            <p>La encíclica desarrolla una profunda teología de la vida humana como don sagrado de Dios. Esta perspectiva se fundamenta en:</p>
+            
+            <div class="two-column">
+                <div>
+                    <h4>Antropología Bíblica</h4>
+                    <ul class="document-list">
+                        <li>El ser humano creado a imagen de Dios (Génesis 1:26-27)</li>
+                        <li>La vida como aliento divino (Génesis 2:7)</li>
+                        <li>El dominio exclusivo de Dios sobre la vida y la muerte (Deuteronomio 32:39)</li>
+                        <li>La sangre como sede de la vida (Levítico 17:11)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Teología Cristiana</h4>
+                    <ul class="document-list">
+                        <li>Jesucristo como Camino, Verdad y Vida (Juan 14:6)</li>
+                        <li>La Encarnación como santificación de la vida humana</li>
+                        <li>La Redención como don de vida eterna</li>
+                        <li>La resurrección como victoria sobre la muerte</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="quote">
+                "El hombre es llamado a una plenitud de vida que va más allá de las dimensiones de su existencia terrena, porque consiste en compartir la vida misma de Dios. La sublimidad de esta vocación sobrenatural manifiesta la grandeza y el valor de la vida humana incluso en su fase temporal."
+                <div class="quote-source">Evangelium Vitae, 2</div>
+            </div>
+            
+            <h3>2. El Relato de Caín y Abel</h3>
+            <p>El capítulo toma como punto de partida el primer homicidio narrado en la Biblia (Génesis 4:1-16), analizando sus múltiples dimensiones:</p>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Génesis 4:3-5</div>
+                        <p>La ofrenda de Abel es agradable a Dios, mientras que la de Caín no. Esto revela que Caín ya tenía una disposición interior equivocada.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Génesis 4:6-7</div>
+                        <p>Dios advierte a Caín sobre el pecado que acecha, mostrando que el homicidio es precedido por un proceso interior de consentimiento al mal.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Génesis 4:8</div>
+                        <p>Caín mata a su hermano Abel, cometiendo el primer homicidio. La violencia fratricida como ruptura radical de la comunión.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Génesis 4:9-10</div>
+                        <p>Dios escucha "la sangre de tu hermano clamando desde el suelo". La vida humana tiene un valor objetivo que trasciende al individuo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Génesis 4:11-16</div>
+                        <p>Las consecuencias del homicidio: Caín es maldito y condenado a vagar. El pecado contra la vida trae consecuencias sociales.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="media-container">
+                <div class="image-container">
+                    <img src="https://th.bing.com/th/id/OIP.WTq9pK9xIELka55IWLNiMgHaD2?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="La creación de Adán de Miguel Ángel">
+                    <p class="image-caption">La creación de Adán - Representación de la vida como don divino (Capilla Sixtina)</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Moralidad -->
+        <section id="moralidad">
+            <h2>Análisis Moral</h2>
+            
+            <h3>1. El Homicidio: Ofensa a Dios y a la Humanidad</h3>
+            <p>La encíclica presenta el homicidio como uno de los pecados más graves por múltiples razones:</p>
+            
+            <div class="two-column">
+                <div>
+                    <h4>Dimensiones Teológicas</h4>
+                    <ul class="document-list">
+                        <li><strong>Ofensa directa a Dios:</strong> Atenta contra su soberanía como único dueño de la vida</li>
+                        <li><strong>Rechazo del amor creador:</strong> Niega que la vida sea un don sagrado</li>
+                        <li><strong>Profanación de la imagen divina:</strong> El ser humano es imagen de Dios</li>
+                        <li><strong>Frustración del plan salvífico:</strong> Cada persona tiene un destino eterno</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Dimensiones Humanas</h4>
+                    <ul class="document-list">
+                        <li><strong>Destrucción irreparable:</strong> La vida humana es un bien no renovable</li>
+                        <li><strong>Ruptura de la fraternidad:</strong> Todos los seres humanos son hermanos</li>
+                        <li><strong>Daño social:</strong> Debilita los fundamentos de la convivencia</li>
+                        <li><strong>Escándalo público:</strong> Corroe los valores de la comunidad</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="quote">
+                "Nadie puede atentar contra la vida de un hombre inocente sin oponerse al amor de Dios hacia él, sin violar un derecho fundamental e irrenunciable, sin cometer por tanto un crimen de extrema gravedad."
+                <div class="quote-source">Evangelium Vitae, 57</div>
+            </div>
+            
+            <h3>2. El Suicidio: Rechazo de la Soberanía Divina</h3>
+            <p>El suicidio es analizado como un acto contrario a la ley moral por:</p>
+            
+            <div class="two-column">
+                <div>
+                    <h4>Aspectos Morales</h4>
+                    <ul class="document-list">
+                        <li><strong>Rechazo de la soberanía de Dios:</strong> Solo Él es señor de la vida y la muerte</li>
+                        <li><strong>Negación de la esperanza:</strong> La vida siempre tiene valor y significado</li>
+                        <li><strong>Abandono de las responsabilidades:</strong> Hacia la familia y la sociedad</li>
+                        <li><strong>Acto de desesperación:</strong> Frente a problemas que podrían superarse</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Consideraciones Pastorales</h4>
+                    <ul class="document-list">
+                        <li><strong>Factores psicológicos:</strong> Pueden disminuir la responsabilidad</li>
+                        <li><strong>Necesidad de compasión:</strong> No juzgar a las víctimas</li>
+                        <li><strong>Importancia de la prevención:</strong> Apoyo comunitario</li>
+                        <li><strong>Oración por los difuntos:</strong> Misericordia divina</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="media-container">
+                <div class="image-container">
+                    <img src="https://th.bing.com/th/id/OIP.iHPzB8ErEzsFzlouFPHd3gHaEc?w=288&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="La muerte de Sócrates">
+                    <p class="image-caption">La muerte de Sócrates - Representación artística de un suicidio (Jacques-Louis David, 1787)</p>
+                </div>
+            </div>
+
+            <h3>3. Análisis Detallado de la Inmoralidad del Homicidio</h3>
+
+            <h4>Fundamentos Teológicos Católicos</h4>
+            <p>La tradición católica ha sostenido desde sus orígenes que el homicidio constituye una de las ofensas más graves contra el orden moral. Esta postura no es arbitraria ni meramente convencional, sino que se fundamenta en una profunda comprensión de la naturaleza humana y su relación con el Creador. Veamos los pilares fundamentales de esta enseñanza:</p>
+
+            <p><strong>La dignidad humana como reflejo de lo divino:</strong> El Génesis nos revela que "Dios creó al ser humano a su imagen y semejanza" (Gn 1,27). Esta afirmación constituye la base más profunda del valor inalienable de cada persona. No somos simplemente seres biológicos complejos, sino portadores de una dignidad única que nos vincula directamente con lo trascendente. Esta dignidad no depende de capacidades intelectuales, estado de salud, productividad social o cualquier otra circunstancia contingente. Incluso cuando la enfermedad, la fragilidad o la vulnerabilidad afectan a la persona, su valor intrínseco permanece intacto. Por ello, el homicidio no es solo la eliminación de un organismo vivo, sino un atentado contra el reflejo visible de lo divino en nuestro mundo.</p>
+
+            <p><strong>La vida como don y no como posesión:</strong> La tradición bíblica enfatiza constantemente que la vida es un don recibido, no un bien del que podamos disponer arbitrariamente. Como expresa bellamente el Salmo 139: "Tú formaste mis entrañas, me tejiste en el seno materno... No te estaba oculto mi ser cuando en lo secreto me iba formando". Esta comprensión de la vida como don implica que ningún ser humano posee un dominio absoluto sobre la vida, ni la propia ni, mucho menos, la ajena. En la Evangelium Vitae, San Juan Pablo II profundiza esta idea: "La vida humana es sagrada porque desde su inicio comporta la acción creadora de Dios y permanece siempre en una especial relación con el Creador, su único fin" (EV, 53). Al rechazar esta condición de administradores y no dueños absolutos de la vida, el homicidio constituye una apropiación ilegítima de lo que pertenece exclusivamente a Dios.</p>
+
+            <p><strong>El señorío exclusivo de Dios sobre la vida:</strong> Deuteronomio 32,39 nos recuerda las palabras divinas: "Yo doy la muerte y la vida". Esta afirmación no es una mera expresión de poder divino, sino una revelación sobre el orden moral del cosmos. La vida y la muerte están bajo el señorío de Dios, no como arbitrariedad divina, sino como expresión de su amor providente y su sabiduría. Cuando un ser humano se atribuye el derecho de determinar el final de otra vida inocente, está usurpando una prerrogativa exclusivamente divina, alterando el orden esencial de la creación. Santo Tomás de Aquino expresaba esta idea al afirmar que el homicidio constituye una injuria directa contra Dios mismo, pues "quien mata a un ser humano, destruye lo que es propiedad de Dios".</p>
+
+            <p><strong>El "No matarás" como expresión de la ley natural:</strong> El quinto mandamiento (Ex 20,13) no es simplemente una prohibición positiva, sino la expresión revelada de una ley moral objetiva inscrita en el corazón humano. Como enseña el Catecismo: "La vida humana es sagrada porque, desde su origen, comporta la acción creadora de Dios y permanece para siempre en una relación especial con el Creador, su único fin. Solo Dios es dueño de la vida desde el comienzo hasta su término: nadie, en ninguna circunstancia, puede atribuirse el derecho de destruir directamente a un ser humano inocente" (CIC 2258). Esta prohibición, por lo tanto, no es una limitación externa a la libertad humana, sino la expresión de nuestra propia naturaleza y dignidad. San Agustín enseñaba que las leyes humanas injustas realmente no son leyes, pues contradicen la ley natural; de manera análoga, podríamos decir que cualquier acción que atente directamente contra la vida humana inocente contradice nuestra propia naturaleza más profunda.</p>
+
+            <p><strong>El homicidio como ruptura de la fraternidad humana:</strong> En el relato de Caín y Abel, la pregunta divina "¿Dónde está tu hermano?" (Gn 4,9) revela otra dimensión fundamental: el homicidio no solo ofende a Dios y a la víctima, sino que rompe el tejido de la fraternidad humana. Estamos llamados a ser "guardianes" los unos de los otros, a reconocernos como hermanos y hermanas. El homicidio niega radicalmente esta fraternidad esencial. Como expresó el Papa Francisco en Fratelli Tutti: "Cada asesinato reduce nuestra condición de hermanos" (FT, 271). El homicidio, por tanto, no debe verse solo como un acto aislado contra una víctima concreta, sino como una herida al cuerpo social completo y una negación de nuestra interdependencia esencial.</p>
+
+            <div class="quote">
+                "La vida humana debe ser tenida como sagrada, porque desde su inicio es fruto de la acción creadora de Dios y permanece siempre en una especial relación con el Creador, su único fin. Solo Dios es Señor de la vida desde su comienzo hasta su término; nadie, en ninguna circunstancia, puede atribuirse el derecho de matar de modo directo a un ser humano inocente."
+                <div class="quote-source">Instrucción Donum Vitae, Congregación para la Doctrina de la Fe (1987)</div>
+            </div>
+
+            <h4>Perspectiva Moral Filosófica</h4>
+            <p>Más allá de los fundamentos teológicos, existen sólidos argumentos filosóficos que sostienen la inmoralidad intrínseca del homicidio, accesibles a toda persona mediante la razón natural, independientemente de sus creencias religiosas:</p>
+
+            <p><strong>La ley natural y el valor intrínseco de la vida humana:</strong> Santo Tomás de Aquino desarrolló profundamente la noción de ley natural como participación de la criatura racional en la ley eterna. Según esta tradición filosófica, existen principios morales fundamentales que no son meramente convencionales, sino que reflejan la estructura misma de la realidad y pueden ser conocidos mediante la razón. La prohibición del homicidio constituye uno de estos principios primarios de la ley natural, pues deriva directamente del valor inherente a cada vida humana. Como explica en la Summa Theologica: "Lo primero que cae bajo la aprehensión del hombre es el ser, cuya noción va incluida en todo lo que el hombre aprehende. Por eso, el primer principio indemostrable es que 'no se puede afirmar y negar a la vez una misma cosa', principio que se funda en las nociones de ser y no ser. Sobre este principio se fundan todos los demás" (ST I-II, q.94, a.2). De manera análoga, en el orden práctico, el primer principio es "hacer el bien y evitar el mal". De este principio deriva directamente la obligación de preservar la vida humana y la prohibición del homicidio.</p>
+
+            <p><strong>El imperativo categórico y la dignidad humana:</strong> Immanuel Kant formuló su célebre imperativo categórico: "Obra solo según aquella máxima por la cual puedas querer que al mismo tiempo se convierta en una ley universal". Aplicado al homicidio, este principio revela inmediatamente su inmoralidad intrínseca, pues la universalización del homicidio haría imposible la vida humana y social. Pero más profundamente, Kant ofrece una segunda formulación del imperativo: "Obra de tal modo que trates a la humanidad, tanto en tu persona como en la de cualquier otro, siempre como un fin y nunca simplemente como un medio". El homicidio, al reducir a la persona a un obstáculo que se elimina, a un medio para satisfacer intereses personales o colectivos, niega radicalmente la dignidad inherente a cada ser humano como fin en sí mismo. La persona posee un valor absoluto, no instrumentalizable, que el homicidio desconoce frontalmente.</p>
+
+            <p><strong>El bien común como fundamento de la convivencia:</strong> La tradición aristotélico-tomista ha enfatizado que el bien común constituye el fin de la vida social. Este bien común no es la simple suma de bienes individuales, sino el conjunto de condiciones que permiten a cada persona y a la comunidad alcanzar su plenitud. La protección de la vida inocente constituye un elemento esencial e ineludible de este bien común. Como señala el Compendio de la Doctrina Social de la Iglesia: "Una sociedad que, en todos sus niveles, quiere positivamente estar al servicio del ser humano es aquella que se propone como meta prioritaria el bien común" (CDSI, 165). Sin la protección del derecho fundamental a la vida, los demás derechos y dimensiones del bien común se tornan ilusorios. Toda sociedad que pretende estar ordenada al bien común debe, necesariamente, establecer como principio inviolable el respeto a la vida inocente.</p>
+
+            <p><strong>La ética de la virtud y la formación del carácter:</strong> La tradición aristotélica enfatiza que la moralidad no solo implica reglas o principios abstractos, sino la formación de un carácter virtuoso. La disponibilidad para causar la muerte de otro ser humano inocente revela graves carencias en virtudes fundamentales: justicia (dar a cada uno lo que le corresponde), templanza (moderación de las pasiones), fortaleza (firmeza ante las dificultades) y prudencia (recta razón en el obrar). La persona virtuosa reconoce intuitivamente la gravedad moral de quitar una vida inocente, pues ha desarrollado disposiciones habituales que le permiten percibir el valor inherente a cada ser humano. El homicidio, por tanto, no solo viola principios abstractos, sino que refleja y refuerza un carácter moralmente defectuoso. Como enseñaba Aristóteles, "nos volvemos justos realizando actos justos", y por el contrario, cada acto contrario a la virtud no solo es malo en sí mismo, sino que deteriora progresivamente el carácter moral de quien lo realiza.</p>
+
+            <h4>Marco Legal Internacional y Nacional</h4>
+            <p>El reconocimiento de la inviolabilidad de la vida humana no es exclusivo de tradiciones religiosas o filosóficas particulares, sino que ha sido incorporado como pilar fundamental en el derecho internacional y los ordenamientos jurídicos nacionales modernos. Esta universalidad jurídica refleja la comprensión compartida de que el respeto a la vida constituye un requisito mínimo para cualquier sociedad justa, independientemente de tradiciones culturales o sistemas políticos específicos.</p>
+
+            <p><strong>El derecho a la vida como fundamento de los derechos humanos:</strong> Tras la traumática experiencia de la Segunda Guerra Mundial, la comunidad internacional estableció la Declaración Universal de Derechos Humanos (1948) como estándar mínimo de dignidad humana. No es casualidad que el artículo 3 proclame: "Todo individuo tiene derecho a la vida, a la libertad y a la seguridad de su persona". Este derecho no es una concesión de los estados o sistemas legales, sino un reconocimiento de una realidad preexistente: la dignidad inherente a cada ser humano. El derecho a la vida no solo es cronológicamente el primero en ser enunciado (después de los artículos introductorios), sino lógicamente el más fundamental, pues sin él los demás derechos carecerían de sujeto. La prohibición del homicidio constituye, por tanto, la expresión más básica de respeto hacia este derecho primario.</p>
+
+            <p><strong>La protección legal vinculante en tratados internacionales:</strong> El Pacto Internacional de Derechos Civiles y Políticos (1966) transformó los principios de la Declaración Universal en obligaciones jurídicamente vinculantes para los Estados firmantes. Su artículo 6 establece: "El derecho a la vida es inherente a la persona humana. Este derecho estará protegido por la ley. Nadie podrá ser privado de la vida arbitrariamente". Es significativo el lenguaje empleado: el derecho a la vida es "inherente" a la persona humana, no otorgado por convenio o acuerdo; la ley no crea este derecho, sino que lo "protege". Esta formulación refleja la comprensión de que la inviolabilidad de la vida humana precede y trasciende los ordenamientos jurídicos positivos, aunque debe ser garantizada por ellos.</p>
+
+            <p><strong>La vida como derecho constitucional fundamental:</strong> La Constitución de El Salvador, al igual que la mayoría de constituciones modernas, reconoce explícitamente el derecho a la vida como piedra angular del ordenamiento jurídico. Su artículo 2 establece: "Toda persona tiene derecho a la vida, a la integridad física y moral, a la libertad, a la seguridad, al trabajo, a la propiedad y posesión, y a ser protegida en la conservación y defensa de los mismos". Este reconocimiento constitucional implica que toda la legislación inferior debe interpretarse de manera que proteja efectivamente la vida humana, y que cualquier ley que atentara directamente contra este derecho sería constitucionalmente inválida. En la jerarquía constitucional salvadoreña, el derecho a la vida ocupa una posición preeminente, como condición para el ejercicio de todos los demás derechos.</p>
+
+            <p><strong>La tipificación penal del homicidio y sus circunstancias:</strong> El Código Penal salvadoreño, al igual que los códigos penales de las naciones civilizadas, tipifica el homicidio como uno de los delitos más graves, con penas especialmente severas. La legislación penal reconoce diferentes modalidades (homicidio simple, agravado, culposo) según las circunstancias, motivos y medios empleados. Esta gradación refleja matices en la responsabilidad moral del agente, pero nunca cuestiona el principio fundamental de la inviolabilidad de la vida humana inocente. La tipificación penal no solo expresa el reproche social hacia estas conductas, sino que cumple funciones preventivas (disuadiendo potenciales agresores) y reparadoras (restaurando, en la medida de lo posible, el orden social vulnerado). En el caso salvadoreño, la reforma del Código Penal de 1998 refleja un esfuerzo por adecuar la legislación a los estándares internacionales de protección de derechos humanos, manteniendo a la vez los valores culturales propios, particularmente el profundo respeto por la vida humana arraigado en la tradición cristiana del país.</p>
+
+            <h3>4. Análisis Detallado de la Inmoralidad del Suicidio</h3>
+
+            <h4>Fundamentos Teológicos Católicos</h4>
+            <p>La enseñanza católica sobre el suicidio requiere una reflexión profunda y matizada. A diferencia de algunas visiones simplistas que lo reducen a una mera prohibición, la tradición cristiana ha desarrollado una comprensión rica sobre su gravedad moral, sin dejar de lado la compasión hacia quienes sufren y las circunstancias que pueden afectar la responsabilidad personal.</p>
+
+            <p><strong>La vida como don y administración:</strong> El Catecismo de la Iglesia Católica afirma con claridad: "Somos administradores y no propietarios de la vida que Dios nos ha confiado; no podemos disponer de ella" (CIC 2280). Esta distinción entre propiedad y administración resulta fundamental. La tradición judeo-cristiana comprende la vida no como un bien del que podemos disponer arbitrariamente, sino como un don recibido con gratitud y que conlleva responsabilidad. El libro de Job expresa elocuentemente esta realidad cuando afirma: "Desnudo salí del vientre de mi madre, y desnudo volveré allá. El Señor me lo dio, el Señor me lo quitó" (Job 1,21). Esta perspectiva sitúa la existencia humana dentro de un marco más amplio, donde la vida no es posesión absoluta, sino relación con el Creador. Al quitarse la vida, la persona usurpa una prerrogativa divina, intentando determinar autónomamente lo que corresponde al plan de Dios.</p>
+
+            <p><strong>El suicidio como contradictorio con el amor propio ordenado:</strong> Contrariamente a lo que podría pensarse, la prohibición del suicidio en la tradición católica no se basa en un desprecio por la libertad individual, sino en una comprensión profunda de la auténtica libertad y del amor a uno mismo correctamente ordenado. El Catecismo señala: "El suicidio contradice la inclinación natural del ser humano a conservar y perpetuar su vida. Es gravemente contrario al justo amor de sí mismo" (CIC 2281). Santo Tomás de Aquino desarrolló este argumento al señalar que cada ser humano está naturalmente inclinado a amarse a sí mismo, y este amor implica preservar la propia existencia y resistir a lo que la destruye. El suicidio, por tanto, contradice esta inclinación natural y representa una forma de violencia contra uno mismo. San Agustín ya había señalado en La Ciudad de Dios que el mandamiento "no matarás" se aplica también a uno mismo, pues quien se mata, mata a un ser humano.</p>
+
+            <p><strong>Dimensión comunitaria y relacional:</strong> La teología católica enfatiza que la persona humana es esencialmente social. No existimos como mónadas aisladas, sino en relación con múltiples comunidades. Por ello, el Catecismo señala: "El suicidio rompe los lazos de solidaridad con la familia, la nación y otras sociedades a las que seguimos perteneciendo" (CIC 2281). El suicidio no es simplemente un acto privado que afecta solo al individuo, sino que tiene profundas repercusiones en el tejido social. Como expresó el Papa Francisco: "Nadie puede vivir mejor menospreciando a los demás, dejando a una parte de la humanidad en la cuneta" (Fratelli Tutti, 141). Esta dimensión comunitaria adquiere especial relevancia en una cultura individualista que tiende a atomizar las relaciones y considerar la libertad únicamente como ausencia de restricciones. La tradición católica, por el contrario, entiende la libertad auténtica como capacidad para el compromiso duradero y la entrega a los demás.</p>
+
+            <p><strong>El suicidio como negación de la esperanza:</strong> En su dimensión más profunda, el suicidio refleja una pérdida de esperanza, una desesperación que contradice la confianza cristiana en la providencia divina. La esperanza teologal no es simple optimismo, sino certeza de que ningún sufrimiento tiene la última palabra a la luz de la Resurrección. Como expresa bellamente la carta a los Romanos: "Considero que los sufrimientos del tiempo presente no se pueden comparar con la gloria futura que se revelará en nosotros" (Rom 8,18). El suicidio constituye, en cierto sentido, un cierre prematuro a la acción salvífica y transformadora de Dios en la historia personal. San Juan Pablo II lo expresó magistralmente en Evangelium Vitae: "Aun en medio de dificultades e incertidumbres, todo hombre sinceramente abierto a la verdad y al bien puede llegar a descubrir en la ley natural inscrita en su corazón el valor sagrado de la vida humana desde su inicio hasta su término, y afirmar el derecho de cada ser humano a ver respetado totalmente este bien primario suyo" (EV, 2).</p>
+
+            <div class="quote">
+                "Cada uno es responsable de su vida delante de Dios que se la ha dado. Él sigue siendo su soberano Dueño. Nosotros estamos obligados a recibirla con gratitud y a conservarla para su honor y para la salvación de nuestras almas. Somos administradores y no propietarios de la vida que Dios nos ha confiado. No disponemos de ella."
+                <div class="quote-source">Catecismo de la Iglesia Católica, 2280</div>
+            </div>
+
+            <h4>Consideraciones sobre la Culpabilidad Moral</h4>
+            <p>La tradición moral católica, aunque afirma con claridad la gravedad objetiva del suicidio, ha desarrollado una comprensión profundamente matizada sobre la culpabilidad subjetiva. Esta distinción entre la dimensión objetiva del acto y la responsabilidad personal refleja una visión antropológica realista y misericordiosa, que considera las múltiples circunstancias que pueden afectar la libertad humana.</p>
+
+            <p><strong>Factores que pueden disminuir la responsabilidad personal:</strong> El Catecismo establece con claridad: "Trastornos psíquicos graves, angustia, el temor grave de una prueba, del sufrimiento o de la tortura, pueden disminuir la responsabilidad del suicida" (CIC 2282). Este reconocimiento, relativamente reciente en la historia de la reflexión moral católica, representa un importante avance en la comprensión de los factores psicológicos y patológicos que pueden influir en la decisión suicida. La inmensa mayoría de los suicidios ocurren en el contexto de graves trastornos mentales, especialmente depresión, trastorno bipolar y esquizofrenia. Estas condiciones pueden afectar profundamente las capacidades cognitivas y volitivas, disminuyendo la libertad efectiva de la persona. Por otro lado, situaciones traumáticas como abuso prolongado, estrés postraumático o dolor físico extremo pueden generar un sufrimiento que supera las capacidades de afrontamiento ordinarias. En todos estos casos, la responsabilidad moral puede verse significativamente reducida o incluso anulada.</p>
+
+            <p><strong>La misericordia divina y la esperanza en la salvación:</strong> Aunque históricamente existieron prácticas como negar sepultura eclesiástica a los suicidas, la Iglesia contemporánea ha desarrollado una comprensión más profunda de la misericordia divina en estos casos. El Catecismo enseña: "No se debe desesperar de la salvación eterna de aquellas personas que se han dado muerte. Dios puede haberles facilitado por caminos que Él solo conoce la ocasión de un arrepentimiento salvador" (CIC 2283). Esta afirmación refleja la convicción de que el juicio final pertenece solo a Dios, quien conoce las profundidades del corazón humano y las circunstancias concretas de cada persona. Como expresó el Papa Francisco: "Dios nunca se cansa de perdonar, somos nosotros los que nos cansamos de acudir a su misericordia" (Evangelii Gaudium, 3). Esta perspectiva permite a los familiares y seres queridos de quienes han muerto por suicidio encontrar consuelo en la misericordia divina, sin negar la gravedad objetiva del acto.</p>
+
+            <p><strong>Distinción entre suicidio y testimonio martirial:</strong> La tradición cristiana ha distinguido cuidadosamente entre el suicidio y otras situaciones donde la pérdida de la vida ocurre en contextos sacrificiales. El martirio, por ejemplo, no constituye suicidio, aunque implique la aceptación de la muerte, porque no busca directamente la propia destrucción, sino que acepta la muerte como consecuencia de la fidelidad a valores más altos. Como explica Santo Tomás, la diferencia radica en la intención: el mártir no busca la muerte sino el testimonio de la verdad, mientras que el suicida busca directamente acabar con su vida. Esta distinción resulta particularmente importante en culturas como la salvadoreña, donde figuras como San Óscar Romero representan testimonio martirial: su muerte no fue buscada como fin, sino aceptada como consecuencia de su fidelidad al Evangelio y su defensa de los más vulnerables.</p>
+
+            <h4>Perspectiva Moral y Social</h4>
+            <p>La reflexión sobre el suicidio no puede limitarse a su dimensión individual, sino que debe considerar sus profundas implicaciones sociales, tanto en términos de sus causas como de sus consecuencias.</p>
+
+            <p><strong>El impacto devastador en la comunidad:</strong> Cada suicidio afecta profundamente a un amplio círculo de personas. Estudios recientes estiman que por cada suicidio, aproximadamente 135 personas sufren un impacto significativo, y al menos 6 experimentan efectos devastadores y prolongados. Los supervivientes (familiares y amigos cercanos) no solo enfrentan el dolor de la pérdida, sino también sentimientos de culpa, vergüenza, confusión y abandono que pueden persistir por años. Este sufrimiento se intensifica por el estigma social que todavía rodea al suicidio en muchas comunidades, incluyendo El Salvador. El silencio impuesto, la incomprensión y los juicios precipitados aumentan el aislamiento de quienes ya están atravesando un duelo complejo. En las comunidades pequeñas, típicas del contexto rural salvadoreño, un suicidio puede afectar a toda la población, especialmente cuando involucra a jóvenes. Este impacto colectivo contradice la percepción del suicidio como un acto puramente privado.</p>
+
+            <p><strong>La responsabilidad social en la prevención:</strong> La comprensión del suicidio como fenómeno con importantes dimensiones sociales implica una responsabilidad colectiva en su prevención. La tradición católica ha enfatizado que el bien común no es la simple suma de intereses particulares, sino el conjunto de condiciones que permiten a las personas alcanzar su desarrollo integral. En este sentido, existe una obligación moral compartida de crear entornos que promuevan la salud mental y proporcionen apoyos adecuados a las personas vulnerables. Esta responsabilidad se concreta en múltiples niveles: sistemas de salud mental accesibles, programas educativos que desarrollen habilidades de afrontamiento, reducción del estigma hacia los trastornos mentales, atención especial a grupos de alto riesgo, y promoción de vínculos comunitarios sólidos. En El Salvador, donde los recursos para salud mental son limitados, las comunidades parroquiales pueden desempeñar un papel fundamental en la detección temprana y el acompañamiento de personas en riesgo.</p>
+
+            <p><strong>El valor testimonial del sufrimiento transformado:</strong> La tradición cristiana reconoce el valor transformador del sufrimiento cuando es integrado en una perspectiva de fe. Como expresó Juan Pablo II: "Aun en condiciones de grave sufrimiento, la persona está llamada a dar testimonio del valor inalienable de la vida" (Evangelium Vitae, 65). Este testimonio no implica glorificar el sufrimiento por sí mismo, sino reconocer que incluso las experiencias más dolorosas pueden adquirir sentido cuando se viven en comunión con Cristo. El sufrimiento, aunque indeseable, puede convertirse en ocasión de crecimiento espiritual y testimonio para otros. Muchas personas que han atravesado periodos de ideación suicida y han encontrado razones para vivir ofrecen un poderoso testimonio del valor de la vida incluso en circunstancias extremadamente adversas. En las comunidades salvadoreñas, marcadas por la violencia social y experiencias traumáticas, estos testimonios de esperanza constituyen un contrapeso esencial a la cultura de muerte que el Papa Francisco ha denunciado repetidamente.</p>
+
+            <h3>5. Distinción entre Actos Directos e Indirectos</h3>
+
+            <p>La tradición moral católica, consciente de la complejidad de las situaciones humanas, ha desarrollado distinciones importantes que permiten discernimiento ético en casos difíciles. Estas distinciones no son meros tecnicismos teológicos, sino herramientas que permiten navegar situaciones moralmente complejas sin caer en el relativismo ni en el rigorismo excesivo.</p>
+
+            <h4>El Principio del Doble Efecto: Fundamentos y Aplicaciones</h4>
+            <p>El principio del doble efecto constituye una de las contribuciones más significativas de la teología moral católica a la reflexión ética universal. Este principio reconoce que muchas acciones humanas tienen múltiples efectos, algunos buenos y otros malos. La moralidad de tales acciones no puede evaluarse simplemente por sus resultados, sino que debe considerar la intención del agente y la proporción entre los efectos.</p>
+
+            <p>Formalmente, el principio del doble efecto establece que es moralmente lícito realizar una acción que tiene dos efectos, uno bueno y otro malo, cuando se cumplen estas cuatro condiciones:</p>
+
+            <ol class="document-list">
+                <li>Que la acción en sí misma sea buena o al menos moralmente neutra.</li>
+                <li>Que el efecto bueno se siga inmediatamente de la acción, no mediante el efecto malo.</li>
+                <li>Que solo se intente el efecto bueno, tolerando el malo aunque se prevea.</li>
+                <li>Que exista una razón proporcionalmente grave para permitir el efecto malo.</li>
+            </ol>
+
+            <p>Este principio tiene raíces en el pensamiento de San Agustín, pero fue Santo Tomás de Aquino quien lo articuló sistemáticamente al analizar la licitud de la legítima defensa. Como explica en la Summa Theologica: "Nada impide que un solo acto tenga dos efectos, de los cuales solo uno es querido, mientras que el otro queda fuera de la intención... el acto de defensa puede tener dos efectos: uno, la conservación de la propia vida; otro, la muerte del agresor" (ST II-II, q.64, a.7).</p>
+
+            <p>La importancia de este principio radica en que reconoce la existencia de dilemas morales genuinos, situaciones donde cualquier curso de acción parece implicar algún mal. Lejos de ofrecer una "escapatoria" moral, el principio proporciona un método riguroso para discernir la acción correcta en circunstancias donde el bien puro parece inalcanzable. En el contexto salvadoreño, este principio puede ser particularmente relevante para orientar decisiones difíciles en un entorno social marcado por la violencia y la escasez de recursos.</p>
+
+            <h4>La Legítima Defensa: Protección de la Vida sin Contradicción</h4>
+            <p>La prohibición del homicidio parece plantear un dilema moral en situaciones de agresión injusta: ¿cómo proteger la propia vida o la de inocentes sin violar el mandamiento "no matarás"? La tradición católica ha resuelto esta aparente contradicción mediante una cuidadosa distinción: la defensa legítima no busca directamente matar al agresor, sino detener la agresión; la muerte del agresor, aunque previsible, no es el fin buscado sino un efecto colateral no deseado.</p>
+
+            <p>El Catecismo lo expresa así: "La defensa del bien común exige colocar al agresor en estado de no poder causar perjuicio. Por este motivo, los que tienen autoridad legítima tienen el derecho y el deber de rechazar, incluso con el uso de las armas, a los agresores de la sociedad civil confiada a su responsabilidad" (CIC 2265). Esta formulación distingue cuidadosamente entre el fin buscado (protección) y el medio empleado (repeler la agresión). La muerte del agresor no es el objetivo, sino una consecuencia no buscada aunque previsible.</p>
+
+            <p>Esta distinción resulta crucial en el contexto salvadoreño, donde la violencia social plantea frecuentes dilemas sobre la defensa propia y de seres queridos. El principio católico de legítima defensa proporciona una orientación clara: es lícito, e incluso puede ser obligatorio, defender la vida inocente contra agresiones injustas, pero debe hacerse con la intención de proteger, no de vengarse o castigar, y empleando solo la fuerza necesaria para detener la agresión.</p>
+
+            <p>Es importante subrayar que esta licitud moral no implica una glorificación de la violencia. Como enseña el Compendio de Doctrina Social: "El derecho a defenderse no debe convertirse en pretexto para ejercer la violencia indiscriminada" (CDSI, 496). La legítima defensa representa siempre una situación límite, no un ideal cristiano. La perspectiva evangélica sigue siendo clara: "Bienaventurados los que trabajan por la paz" (Mt 5,9).</p>
+
+            <h4>Intervenciones Médicas y Acciones con Efectos Indirectos</h4>
+            <p>El principio del doble efecto encuentra aplicación especialmente relevante en el ámbito médico, donde frecuentemente las intervenciones necesarias conllevan riesgos o efectos secundarios negativos. La Declaración sobre la Eutanasia (1980) de la Congregación para la Doctrina de la Fe aplica este principio al afirmar: "No es un atentado contra la vida el uso de analgésicos para aliviar el sufrimiento del moribundo, incluso con riesgo de abreviar sus días, si el dolor no puede ser aliviado de otra manera".</p>
+
+            <p>Esta aplicación del principio distingue claramente entre eutanasia (acción u omisión que por su naturaleza e intención causa la muerte para eliminar el dolor) y el uso de medicación analgésica necesaria que podría, como efecto secundario no buscado, acortar la vida. La diferencia crucial radica en la intención: en un caso se busca directamente causar la muerte; en el otro, se busca aliviar el sufrimiento, aceptando pero no buscando el posible acortamiento de la vida.</p>
+
+            <p>De manera similar, ciertos tratamientos médicos urgentes para salvar la vida de una mujer embarazada pueden tener como efecto secundario no buscado la pérdida del feto. Un ejemplo clásico es la extirpación del útero canceroso en una mujer embarazada. La intención directa es tratar el cáncer, no interrumpir el embarazo, aunque se prevea que esto sucederá. Esta situación es moralmente distinta del aborto directo, donde la muerte del no nacido es el medio elegido para resolver la situación.</p>
+
+            <p>Para el contexto salvadoreño, con sus limitaciones en la atención médica, estas distinciones pueden ser particularmente relevantes para orientar decisiones clínicas difíciles desde una perspectiva moral integral. La carta "Samaritanus Bonus" (2020) proporciona orientaciones recientes sobre el cuidado de personas en fases críticas y terminales de la vida, manteniendo el equilibrio entre el respeto absoluto a la vida y la evitación del ensañamiento terapéutico.</p>
+
+            <div class="quote">
+                "La legítima defensa puede ser no solamente un derecho, sino un deber grave, para el que es responsable de la vida de otro, del bien común de la familia o de la sociedad."
+                <div class="quote-source">Catecismo de la Iglesia Católica, 2265</div>
+            </div>
+
+            <h3>6. Documentos de la Iglesia que Fundamentan esta Postura</h3>
+            <p>La enseñanza católica sobre el homicidio y el suicidio no es simplemente una opinión teológica, sino que constituye un elemento constante del Magisterio eclesial, desarrollado y profundizado a través de numerosos documentos a lo largo de los siglos. Esta continuidad refleja la convicción de que el respeto a la vida humana forma parte del núcleo invariable de la fe cristiana, aunque su comprensión y articulación se haya enriquecido con el tiempo. Presentamos a continuación los documentos más relevantes, desde los clásicos hasta los más recientes pronunciamientos magisteriales:</p>
+
+            <h4>Documentos Fundamentales del Magisterio</h4>
+
+            <p><strong>Catecismo de la Iglesia Católica (1992):</strong> Representa la síntesis autorizada más reciente de la doctrina católica. Dedica secciones específicas al respeto a la vida humana (2258-2262), donde establece los fundamentos bíblicos y teológicos de la inviolabilidad de la vida; al homicidio (2268-2269), calificándolo como "gravemente contrario a la dignidad del ser humano y a la santidad del Creador"; y al suicidio (2280-2283), donde ofrece una comprensión matizada que combina la afirmación de su gravedad objetiva con la consideración de factores que pueden disminuir la responsabilidad subjetiva. Este documento representa la culminación de una tradición de reflexión moral que se remonta a los Padres de la Iglesia y que integra desarrollos teológicos y pastorales contemporáneos.</p>
+
+            <p><strong>Evangelium Vitae (1995):</strong> Esta encíclica de San Juan Pablo II constituye la exposición más completa del Magisterio sobre las cuestiones relacionadas con el valor y la inviolabilidad de la vida humana. Frente a lo que denomina "cultura de la muerte", el documento propone una comprensión integral de la "cultura de la vida" basada en el reconocimiento de la dignidad inherente a cada persona. Particularmente relevante es su exposición sobre los fundamentos bíblicos del respeto a la vida, comenzando con el relato de Caín y Abel como paradigma del primer homicidio y sus consecuencias. El documento aborda con profundidad teológica y antropológica las diversas amenazas contemporáneas contra la vida humana, ofreciendo no solo condenas, sino razones profundas para una ética de la vida.</p>
+
+            <p><strong>Gaudium et Spes (1965):</strong> Esta constitución pastoral del Concilio Vaticano II representó un punto de inflexión en la articulación de la enseñanza social católica. En su número 27, al enumerar las acciones que "son en sí mismas infamantes", incluye explícitamente "los homicidios de cualquier clase, genocidios, aborto, eutanasia y el mismo suicidio deliberado". La importancia de este documento radica en su integración de la defensa de la vida humana dentro de una visión amplia de la dignidad de la persona y su orientación hacia el bien común. La prohibición del homicidio y el suicidio no aparece como una norma aislada, sino como parte de una comprensión integral de la vocación humana y la responsabilidad social.</p>
+
+            <h4>Documentos Especializados sobre Aspectos Específicos</h4>
+
+            <p><strong>Declaración sobre la Eutanasia (1980):</strong> Emitida por la Congregación para la Doctrina de la Fe, aborda específicamente la inmoralidad de la eutanasia como forma de homicidio, distinguiéndola cuidadosamente del rechazo al ensañamiento terapéutico y del uso de analgésicos que, buscando aliviar el sufrimiento, podrían indirectamente acortar la vida. Este documento aplica con precisión el principio del doble efecto y ofrece orientación práctica para situaciones médicas complejas, manteniendo siempre el principio fundamental del respeto a la vida.</p>
+
+            <p><strong>Donum Vitae (1987):</strong> Esta instrucción sobre el respeto de la vida humana naciente y la dignidad de la procreación aborda principalmente cuestiones de bioética relacionadas con el inicio de la vida, pero sus fundamentos antropológicos y teológicos son igualmente aplicables a la prohibición del homicidio y el suicidio. El documento desarrolla la noción de la vida como don divino que debe ser acogido con gratitud y responsabilidad, no como propiedad de la que se pueda disponer arbitrariamente.</p>
+
+            <p><strong>Veritatis Splendor (1993):</strong> En esta encíclica sobre cuestiones fundamentales de moral, San Juan Pablo II aborda en su número 80 la existencia de "actos que, por sí y en sí mismos, independientemente de las circunstancias, son siempre gravemente ilícitos por razón de su objeto", incluyendo específicamente el homicidio. Este documento es fundamental para comprender la posición católica frente a teorías éticas consecuencialistas o proporcionalistas que relativizarían la prohibición absoluta de quitar intencionalmente la vida inocente.</p>
+
+            <h4>Documentos Recientes que Actualizan la Enseñanza</h4>
+
+            <p><strong>Fratelli Tutti (2020):</strong> En esta encíclica sobre la fraternidad y la amistad social, el Papa Francisco dedica los números 263-270 a desarrollar argumentos contra la pena de muerte, aplicando los principios fundamentales sobre la inviolabilidad de la vida humana a este contexto específico. Aunque centrado en la pena capital, su argumentación sobre la dignidad inalienable de cada persona, incluso de quien ha cometido crímenes graves, refuerza los fundamentos del respeto universal a la vida humana.</p>
+
+            <p><strong>Carta "Samaritanus Bonus" (2020):</strong> Este documento de la Congregación para la Doctrina de la Fe sobre el cuidado de las personas en las fases críticas y terminales de la vida representa la actualización más reciente de la enseñanza católica sobre el final de la vida. Aborda cuestiones como la obstinación terapéutica, los cuidados paliativos, el estado vegetativo, el uso de analgésicos y el acompañamiento espiritual, ofreciendo orientaciones prácticas basadas en los principios fundamentales del respeto a la vida.</p>
+
+            <p><strong>Compendio de la Doctrina Social de la Iglesia (2004):</strong> En sus números 112-114, este documento desarrolla la centralidad del valor de la persona humana para toda la enseñanza social católica. Sin este fundamento antropológico, las prohibiciones específicas contra el homicidio y el suicidio perderían su razón de ser más profunda: el reconocimiento de la dignidad inherente e inviolable de cada persona humana como imagen de Dios.</p>
+
+            <h4>Documentos Históricos y Fuentes Fundamentales</h4>
+
+            <p><strong>Summa Theologica de Santo Tomás de Aquino:</strong> Particularmente en la II-II, cuestión 64 (sobre el homicidio) y cuestión 126 (sobre el suicidio), representa la articulación clásica de los argumentos teológicos y filosóficos contra estas acciones. La importancia de Santo Tomás radica en su integración coherente de fuentes bíblicas, patrísticas y filosóficas (especialmente aristotélicas) en una síntesis que sigue siendo fundamento de la reflexión moral católica.</p>
+
+            <p><strong>Enseñanzas del Concilio de Trento (1563):</strong> En sus declaraciones sobre el quinto mandamiento, este concilio reafirmó la tradición constante de la Iglesia sobre la inmoralidad del homicidio y el suicidio, en un contexto de reforma y contrarreforma donde era necesario clarificar los fundamentos doctrinales.</p>
+
+            <p><strong>Encíclica Casti Connubii (1930):</strong> Aunque principalmente centrada en el matrimonio, esta encíclica del Papa Pío XI aborda la santidad de la vida humana como valor fundamental, relacionándola específicamente con la procreación responsable y la inmoralidad de prácticas que atentan contra la vida naciente.</p>
+        </section>
+        
+        <!-- El Salvador -->
+        <section id="salvador" class="salvador-section">
+            <h2>La Situación en El Salvador</h2>
+            
+            <h3>Contexto Nacional</h3>
+            <p>El Salvador ha enfrentado históricamente altas tasas de homicidios y suicidios, situación que contrasta dramáticamente con la enseñanza de <em>Evangelium Vitae</em> sobre la sacralidad de la vida humana.</p>
+            
+            <div class="stats-box">
+                <h3>Estadísticas Alarmantes en El Salvador</h3>
+                <div class="stat-item">
+                    <span>Tasa de homicidios (2022):</span>
+                    <span class="stat-value">7.8 por 100,000 hab.</span>
+                </div>
+                <div class="stat-item">
+                    <span>Tasa en años anteriores (2015):</span>
+                    <span class="stat-value">103 por 100,000 hab.</span>
+                </div>
+                <div class="stat-item">
+                    <span>Suicidios anuales:</span>
+                    <span class="stat-value">~300 casos</span>
+                </div>
+                <div class="stat-item">
+                    <span>Edad más afectada:</span>
+                    <span class="stat-value">15-29 años</span>
+                </div>
+                <div class="stat-item">
+                    <span>Municipios más violentos:</span>
+                    <span class="stat-value">Soyapango, Mejicanos, Apopa</span>
+                </div>
+            </div>
+            
+            <h3>Causas del Problema en El Salvador</h3>
+            <div class="two-column">
+                <div>
+                    <h4>Factores Sociales</h4>
+                    <ul class="document-list">
+                        <li><strong>Pandillas y crimen organizado:</strong> Maras como MS-13 y Barrio 18</li>
+                        <li><strong>Pobreza y desigualdad:</strong> 26% de población en pobreza</li>
+                        <li><strong>Desintegración familiar:</strong> Altos índices de migración</li>
+                        <li><strong>Acceso a armas:</strong> Facilidad para obtener armas de fuego</li>
+                        <li><strong>Legado de la guerra civil:</strong> Cultura de violencia</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Factores Culturales</h4>
+                    <ul class="document-list">
+                        <li><strong>Normalización de la violencia:</strong> Como forma de resolver conflictos</li>
+                        <li><strong>Pérdida de valores religiosos:</strong> Secularización creciente</li>
+                        <li><strong>Influencia de medios:</strong> Glorificación de la violencia</li>
+                        <li><strong>Falta de esperanza:</strong> Especialmente en jóvenes</li>
+                        <li><strong>Machismo cultural:</strong> Toxicidad en roles de género</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="quote">
+                "Cuando prevalece la cultura de muerte, como lamentablemente ocurre en muchas partes de América Latina, especialmente en países como El Salvador, se produce una dramática contradicción con el designio creador de Dios. La violencia homicida y el suicidio son expresiones extremas de esta cultura que debe ser transformada por el Evangelio de la Vida."
+                <div class="quote-source">Conferencia Episcopal de El Salvador, 2018</div>
+            </div>
+            
+            <h3>Inmoralidad Específica en el Contexto Salvadoreño</h3>
+            <p>La enseñanza de <em>Evangelium Vitae</em> ilumina la gravedad moral de la situación en El Salvador:</p>
+            
+            <h4>1. Homicidios por Pandillas</h4>
+            <p>Las maras y grupos criminales cometen homicidios que ofenden gravemente a Dios porque:</p>
+            <ul class="document-list">
+                <li><strong>Víctimas inocentes:</strong> Muchos asesinatos son de personas ajenas a conflictos</li>
+                <li><strong>Extrema crueldad:</strong> Métodos que aumentan deliberadamente el sufrimiento</li>
+                <li><strong>Motivos banales:</strong> Muertes por insignificancias o "limpieza social"</li>
+                <li><strong>Reclutamiento de niños:</strong> Corrupción de menores</li>
+            </ul>
+            
+            <h4>2. Feminicidios</h4>
+            <p>El Salvador tiene una de las tasas más altas de feminicidios en la región, lo que constituye:</p>
+            <ul class="document-list">
+                <li><strong>Doble pecado:</strong> Homicidio más odio a la mujer creada por Dios</li>
+                <li><strong>Ruptura del matrimonio:</strong> Muchos casos son por parejas o exparejas</li>
+                <li><strong>Falta de protección estatal:</strong> Omisión de las autoridades</li>
+            </ul>
+            
+            <h4>3. Suicidios en Jóvenes</h4>
+            <p>La alta tasa de suicidios juveniles refleja:</p>
+            <ul class="document-list">
+                <li><strong>Crisis de sentido:</strong> Falta de esperanza en el futuro</li>
+                <li><strong>Presión social:</strong> Exclusión y falta de oportunidades</li>
+                <li><strong>Problemas mentales no atendidos:</strong> Depresión y ansiedad</li>
+            </ul>
+            
+            <div class="media-container">
+                <div class="video-container">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/KyFxFQ8z8s4" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+                            </div>
+                <p class="image-caption">Análisis sobre violencia en El Salvador desde la perspectiva católica</p>
+            </div>
+
+
+            
+            <h3>Postura de la Iglesia en El Salvador</h3>
+            <p>La Iglesia Católica salvadoreña ha sido voz profética ante esta crisis:</p>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1980</div>
+                        <p>Monseñor Óscar Romero denuncia los asesinatos políticos y es martirizado mientras celebraba la Eucaristía.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1990s</div>
+                        <p>La Iglesia media en los acuerdos de paz y promueve la reconciliación nacional.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2005</div>
+                        <p>La Conferencia Episcopal publica "La violencia en El Salvador: Diagnóstico y propuestas pastorales".</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015</div>
+                        <p>Campaña "Sí a la Vida, No a la Violencia" en parroquias y escuelas católicas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018</div>
+                        <p>Declaración sobre las políticas de seguridad y el respeto a los derechos humanos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020</div>
+                        <p>Programas de rehabilitación para ex pandilleros en centros católicos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Soluciones -->
+        <section id="soluciones">
+            <h2>Camino hacia una Cultura de Vida</h2>
+            
+            <h3>Propuestas desde Evangelium Vitae</h3>
+            <p>El capítulo no solo denuncia los males, sino que ofrece alternativas concretas:</p>
+            
+            <div class="two-column">
+                <div>
+                    <h4>1. Conversión Personal</h4>
+                    <ul class="document-list">
+                        <li><strong>Reconocimiento del valor sagrado de la vida:</strong> Catequesis permanente</li>
+                        <li><strong>Formación de la conciencia:</strong> Según la ley moral natural</li>
+                        <li><strong>Rechazo a la violencia:</strong> En todas sus formas</li>
+                        <li><strong>Cultivo de virtudes:</strong> Respeto, paciencia, perdón</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>2. Transformación Social</h4>
+                    <ul class="document-list">
+                        <li><strong>Políticas pro-vida:</strong> Que protejan a los más vulnerables</li>
+                        <li><strong>Educación en valores:</strong> Desde la primera infancia</li>
+                        <li><strong>Medios de comunicación responsables:</strong> Que no glorifiquen la violencia</li>
+                        <li><strong>Rehabilitación de delincuentes:</strong> Justicia restaurativa</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="quote">
+                "Frente a la cultura de muerte, es necesario promover incansablemente una cultura de vida. Esta es posible si los creyentes saben ser coherentes con su fe y se comprometen activamente en la promoción de la dignidad humana, comenzando por los más débiles y marginados."
+                <div class="quote-source">Conferencia Episcopal de El Salvador, 2020</div>
+            </div>
+            
+            <h3>Aplicación Práctica en El Salvador</h3>
+            
+            <h4>1. Programas Eclesiales Existentes</h4>
+            <ul class="document-list">
+                <li><strong>Hogares de protección:</strong> Para jóvenes en riesgo</li>
+                <li><strong>Oficinas de paz y reconciliación:</strong> En diócesis y parroquias</li>
+                <li><strong>Capellanías penitenciarias:</strong> Atención espiritual a reos</li>
+                <li><strong>Centros de rehabilitación:</strong> Como el Centro Integral "San José" en San Salvador</li>
+                <li><strong>Programas de formación laboral:</strong> Para prevenir reclutamiento por pandillas</li>
+            </ul>
+            
+            <h4>2. Propuestas Concretas</h4>
+            <div class="two-column">
+                <div>
+                    <h5>Prevención del Homicidio</h5>
+                    <ul class="document-list">
+                        <li>Fortalecer la pastoral juvenil en zonas de riesgo</li>
+                        <li>Crear redes de apoyo familiar</li>
+                        <li>Promover deporte y arte como alternativas</li>
+                        <li>Capacitar líderes comunitarios en mediación</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Prevención del Suicidio</h5>
+                    <ul class="document-list">
+                        <li>Líneas telefónicas de ayuda con enfoque cristiano</li>
+                        <li>Grupos de apoyo en parroquias</li>
+                        <li>Formación en salud mental para agentes pastorales</li>
+                        <li>Celebrar el "Día de la Valoración de la Vida"</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="media-container">
+                <div class="image-container">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADqATgDASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAABAECAwUGAAcI/8QARBAAAgEDAgQEAwYDBgQEBwAAAQIDAAQREiEFMUFREyJhcQaBkRQjMkKhsTNSwWJykrLR4RUkgvAHNENjNURkc5Oz8f/EABkBAAMBAQEAAAAAAAAAAAAAAAIDBAEABf/EACgRAAICAgICAgMAAQUAAAAAAAABAhEDIRIxBCITQQUyUSMUM0Jhcf/aAAwDAQACEQMRAD8AvYo9AAohdupocOfpS6zVx5ZKxznBNPRTtzroEL70UItxXDoqkPt1I33okscE5NIi4Xl0pXGAawH7Io8l+vOuvWwhGTyxUtupJzihb88xSu5DforM89zTCT3NPIFRkU0NKhjMe9RsSaeR6UwissKiM6qYc9TTmpMbV1mcUR5I60hYjrSsPSmEZrrN410IXJ6mo2Zqdg0hFZZlMYkhRgas4z4yc+lVZX9antZmjYKeXShlsW1xCmVo235VwGrlRLhZU1DGcULG2l9J77etdCdgTh9oiuImAJFDQMyt86t5FDrVeYtLEgdabYBYRt4iDc0LNANR96WNiopWk1HFYc1Q1Ic0rwsBU8IP60Q6ZA2rDosS0nEMe56darL7iERlPmG2etT3QKo2OxxisZefafFcgMfMa7nQ741I0aXcbMoB6g1qLCVWjXB3xXmVp9pMq51DlWttLiaBE3OOtbzs5YN6NYWfuahYt3oW1v45AA2xqwCrJuK4W006YKWYdTQd858I7/lNWTxY6VWcRQiNtulYcUOo0hY4pMHNcc4NMQhljwvJfn3rqfwpfNmurQktFgIeVKYcEUaqAc6eqDI2pdjYRti20IA5c6JEe/KpYVGBU4Qc8UDYxoH0nFRS5xjFG4FCyYLgetDyMjHZLAhCE46VVcQJ1getX6hViPsKobzDSke9Kg92MkvorW1ZNM81FFRTCgpnMZxBmplTMu9M01nINIHYb0mNqlZcUzFZyNohbG9M2ohkFR6N6zkdRCRSY9KmK0zHpWcjqIio7U0RsxAAOrpjH9anI2Nc1nxG4NtbWIjNzc53cBkhj6vJ0xjfHOii2wJUkAS/EFvaaYo1WaVvKWkkCwx5OnJxlie2Bj1oODj15KXeWNcK5jZdCoAQc7Y/Q1r4/g7gvDEja4jN3cNh5JZwM6h/Iq7ADoKS7seG+YRW8SqTq0hevegl5EYdIZDw5ZPspLm+cpC8cjqcoHXy5OrVuPbaq23+IQjTLexsVQZSSFfM5zupUkDb5Vb3MEBULoUKvLGBjFZ69hgfIVcMMjynl1pUfNt00Mn+OpWmXNpxnhN+3hW85E+P4MymOU/3Qdj8jUrS6WFefz20moMpKyxvlXQ4IOcgjG4rXcLvTxGzjkkP/MwnwboYx94OT47MN/rVsZpq0edKFOmX9tNnAqyUgiqK3JU1bxScs9qMW40QXQwD65qpaCJyScVfSxiRTt0qqki0se2awywRLaNX1Acj2qwVFKAYqFVwRRSqQAa4OE6ZEFZDtn5Udb3zwkBiSO9D7GmOuc0PRVyU1UjTwTJcIGBzmgOJqPDb2p/B1Ijx713FRiNqIkkq0jNaKjZcA0Tp3+dRyDnTCcsOEryrqm4Suwrq4auizVsmilB2qshm1SYHQ1aL+HNLKYrigqHciiiMChbUZ39aLYUEgW9kTEAGgxlpR70TIQFND2/mkJ9aTN0g4hkhKxH2qgkOqRz61eXTaYz7VnmbLMe5NBj6sNr2Rxphri1MLGtsooa1R496cxqMk7VlnUI+ajqRjtUZrWwlEXmKhJ3qUbg1E+xxQNmpDc96aTS7U1ga6zqFGWIUc2IUe5OK2PCIreAySkKGcLChUbBE3Crn15/7VluFQG44jaoRlU8Sd/7sSlv3xWka/wCFcLigk4ndx2yuuuJHz4jjOMhOePlRpvjSFuKvf0WF86lWdxgBSFzz3NZ6VSSCu4Clj6CnzfFfwxfM9vDexPpUtlgykADOQTQ0dzb6mYSq8UviFGByCiLtj3pGWP8AS7B1oqr7Ch8A42JP9KzlzgMcHnnPzq34rxjhialNxEpyQw1AkMOhxWca7s7kt4MyyMOg2OO4BqN4pX0USyxqrBLoKEk5bqcZ78sU/wCFWdeIyxFvLPbyBlPeMhlPy3HzplypIGeW2cf1oz4dhReJwtnzCObA33BXmK9PC9JHieQvZs1qRlTRKtjvT1QEUjIVJqslTsmWTKkHtQcgyxqdjhaF8QEkHvWgSiKF3FWEUWpB7UEp8wq0gxpFYCkByQMuSKgbV1q6Kow3AoGaJRnAFYMiwvhkyoukkDGaTisiGM4I+tUxleEnBIxmqi84vOzmMnYc65NBzxurLMMvcVHIw33FUv22Tf0qEcQcuFPU0fJCPjZuuEjKrXUBwi8VBHrNdXBKEkW1hEMgnvmrcryAoGFAjbVYxjO9CUSCYEwtSOa5Nhikc0tiwW4OFPsa6zTAz86gu5Py9zijLVSIwfSpsj0PgtEPEG0xt7VRDlnNWfFnIQjucVTjUVGK2H6BR3Mc3vTaaQ1Nw1YU0OIFNKrimMT3qIlu9baOUWSvjFDk07O3OhmO/MULYcV9E4b1qNzvUWrfmKViMVlm0cTTgQRUJNIGO+9DZtWHWttLepxGzt7iS3vLm0kgtZ0JCxu3mPiFfNggY2rJX1ne2aC24j9pvrpWdWllmnkiCDOnwy22O2TWx4S9zHcySwgFlSJDnGAskyKSc+mfrVvxC3juNShcrGSWbmunJxq2JyB9aKM2nQM8XJJ/08WlhCtJJHC8QUkKVJOcAE7VrGeS2+GOGSLLKLtxL4sSxOGQEsGCSN5MY359cVo5OHcIM8aoftF9IcWwYOI1deT6WABC8+VV/wAbQm2s+H8Ogc6be2WOVhsXmyXLH1JO/wDtQ5Z2HhwuF0zzmeDxFeZ2mKoNbFyMANnBJA64oR4pbaVGGuNwBIufxAEZzvWpsrB7q1d9epFz4iDSAp/Fso+dNk4Th4520lEHl1bkjBHWmPLEkjhm9gUE7z2y6jHlsqzP00nntVnwaaxt7+JpruIeHE+co4A1DSMEZyajt7WNYTGyqABgkAAVX+RriePIDKsgPTOxwAaxZIpWkb8EpyqTPToSrBWUgqwDAjkQRkEVOyAiq3g+1jw+NiSyWsCknnnQM5q1q1O0edJOMmgCbKA1WMTqJ9avZ0DIfY1Ryoyse2a6xkafZPBLuAauYCNIrPRnzj3q4tpcAb1qYMo0WFQyKSDUitqAxStyPtWC0U11HlW74NZK9jkEreU8wNvetjcHDHtVXLFG7ZbGTzoGh/yOqMy7SIDhTUMKytOhweed61LWkDA8jt2ocW0SNkAUSM+QNhBWOIjY4FdT4ypVRXVtj4zVbNkq4arGGPyg+lBouXAqzUYUe1Y2Jm/oVRg86jlxvvT96EuCwDb96ABFfK2u4RfWruLaMVQ26NJdMegq7bypz5Co8r2VroouLyjWq561VtOFGB+9P4pKrXYQHkuT9arpMZG55U/qCNwbmyc3Q7Uqzls0AdPrSxyqpNLRY4hMjPnY1EWk70LPcSavLnFQ+PL61jCSLACQ82qJ4zvvUCTSHbJFRySzauZrDUtk+hh1p6gkbmgTNJ3pY5JCSDmuRrQScDIzTTt1FDSeLq61ETL61jRiWjRcDlQcRhBP8SGeIDoWKgjP0OKuuK8QFjaylRklDy3ZjjAGB3rG8MZ14hw0sSALuHJz0JxWl4oUSE3cgLSxEmCEAEvIM6Bvtgc6Cdh46T2QcHh4hZLPxW4iNzxO70K6s4H2eHVr0Q6vL5dsjqfasl8RccjupJfER9RYqyopGW9Af9a1aN8Zi2Df8NsvDZfNrvU8bzDO6NGR+tZXig4gkRjuODxxICG+7mSSRiNvKc/0rJJVQ5Sk02io4VPGt/IU8RYZ0jTYlDqUczg1Y3hYHAkYjoCetU9vKkskqRoyOMMispVhpPI1YztqYZO5G/bNLkvYVGfozjIsVuXc7KGc+uNgKC4XYXPEeIwIQNU8rF9JJ0x4y7E+g/WjFs574eFA8amELJJ4gOltWRpyuT+laH4ft4OHO4ODPKFWR8HGkHZUB6d+9O4t9IjeVQ39lo8TW0mUBCDAA9BsKJjl1jnRskSzRnHUVTsJLeXSdgTVWKd6IMkb2WL7qd6q7iPVmjtRKAg0M4OTTyfaKxUZZB2qyiyFFM8IMalUads1qHJ8gmOXBwTRIcMNqr8inxy6cDO1cDKH8OuYi2SKqnjOo7Veh1YVW3OFY4oWhbYCVIpgXfl1ogkGmEAYrqMsbjBBFdTwucH1rq7Y1NG+t1BbJo/pQsKBd6IJxXM1vYooK9ZUjY+hoottVVxOUaCvehNirdDeGeZmbuxNWVywEbn0oXhkBWIHrj96lvkdYHwTyNRZG3KiowtzNr4jcDfClVH706XTnn0qGOF2ubiQkktITvT5ImJO9WZFSSO8Nck5EZ096WNQz4pvguamhhZWPtSEtnoOkMkEanB51FmOnz27tITk8qiNq560LsJJUOBjyNxSShcbGuW0cEbnnRDWR0g5O1akY0kyv0jIp6hBg1ObbTzP600W7HlnbckcgB1JrAiOTJGQPnQrF88jU91xTgdlGVuLuNpQP4VviaTProOkfMis1d/FQ3Wzs1X/ANy6bWflGmB+ponjb2J+WEdNl6jSK6sudSlWU9iDkGtjbLHxGWCdm8qKG8M7APtz9jXjf/FuO3j6EuJct+WLTGoB76AP3q14Pxe/4HPG3jtOs0xM0LMdLYXzFCd9Xr6Vv+nlJWhD8uEZcT1jillcTRhjI5VPNpVyo2PYViL7h90CRNJghmcBiTkty51cX3xIfssF2iym3nRWEwQvEB2dk5HnsR0rMXnHrWUkiQudI3AY59cmo590j0oOKhtguRZsXyjShuWMge9BvO7HWdyzeUe9CXN48haVsIh6tsT7Ab1Vz3sspKoSqcj0ZhTIwbIZ5EtI0Nlx6KwvEjkzJbSArdum5SQnZl76eRGf2rWxT2dzpks7mCbGD9xIrN33Ueb6ivKM1IjlSrKSrA7MpIYexG9Ux0RzXJHu/DrpZECsfNyOedS3dskqkgbivIeG/FfGrB11SLdRjAKXRJYj+zKPP9c1u7D48+HJ0VbxbuzlwAdUYuIf8cR1Y/6KW4tO4gK1phwkeImNvl6ilyW371LP9h4jB9p4bcwXKYzqt3DleuGQecfMChLaTmj7HkfeqYztbE5IPtBManNSvEcAikjGG3onbamiougA5U4NNzRM0YIyOdBnKnBrB6lZOjledDXLhjUgOxquuJMPvyrRc42jiwzzpC+4p6BXAxjepBCpxWiKZJFhgK6pY4gNOK6sDRu1IGB2qQkYpm2aVj5aAYRsxANZ++k1zKvdsVcyyaVf2NZrL3F+AvIHf5UE3SKMC3ZrbPCQKPQUNxa4EdrK2fwoxqaNJFRF7AVQ/ErSLasgbBYhfrUWOTlNIPJqDZnrKYtqJHNmogkknbrUdgipFuBnH70UNPp9KvybY3w1WMYFJ6U5VbPKnDapY8Fse9LKmwKUuGxiosyfy0dKq698cqjwo7ULQyL0Cl5B0qdpG8IkkAKpZixwFUDJJPalbR6VRfEvEYYbNbCF83ExRrkL/wCnAPMFY92ODjsPWthBzfETnyLHDmyvn+LYxJdx21qZPDYJFLK+EfnliijPtvVBe8V4rfEi4uH8MEnwovu4V/6F/rmgVwDLgfikYg+g2FNlfSGGd6tjjjFHkzz5Mjq9EUjbEDnnAA6/SkSFmIL5A7dalQxqobGWI3z37e1OXU5Ej8s+UbAfSu4pvYHPiqRY20Yjj8qgA9huTQM7t9sQZJEI/XqKsdfhouANeMqD09W9KqWcpLM6nLqutWO51Bgcmm5tRSRN46cpNs0XwtcO3GbGya6nitL+R4HETJjxTGzRkrIrLjIAIxvmtHxP4LAuHuEvpEDnUyLaxEA9dOHC/pWDdjYXlrdWzMqv9n4jYSqQWhbIcDB2JVgVIPatRN8ffFLRBZBwiRioPiGzIc5HUK4X9KkeNT9qLucoLjZiuIwz297d207lnt5XiyRgEA7ED1oSjL+5ur+7uLy5Kmedg7lEVFJAC7Kuw5ULSXGh6lZw329z9BmuqSBdcqr3En6IxqPoKyjWKKUMRTe9Ox3okgWTRXE0MgkhleOQcnjdkYfNTmr2y+KuK27qbgi7UbEykiXH/wBwb/UGs5TxRANHqfDPivgN7oilla0nbAC3eBGT2Ew8v1xWjJGFIOQQCpBypB6gjavDAatrDjvGuGIsdndyLFrDmGTEkBPbQ4OB3wRRWJlA9aLChpo9QytQcL4lBxayhvIhpLfdzRk5MUygakz26j0NGV1gdAXmGxG9Vl0CWxir2WHILLzxVHcbyEEb1zY+NMgjlaNhvt+1WCOrgFTvVay5zToZHjYds1yYM8aey8iOy11RwyK4XFdRCTdEnNc74FcV3pjr60IRW30+I2A9aE4HCZLiSQ9wN6dxNkU6dqO+H4dMbSfzEtSMrL8UeOO/6XgX0rIfFLZMEYPNyx+W1bLkCawnxA5kvo0A2VR9WND4yuaEeQ6gRQrGkK5O+1PVEPI8/WlFunhx5P60oRV5H9abNvkW4I1jSGtbj+b9adFFhxv+tcWQZ3FJHImsbjrQWOcXQ6eFdec9O9DtCp/N+tSzyx68ZGwoZpoUDPI6pEgy7tsFHuf0rG76GRWrEeO2iSSaeVY4IlMk0jthUQcyT+1ecX1wZ5ryfUT4sryAkY1ZbC7Hflj/ALFT8Z43fXc9yjSOLOUxmC3yfBRIydmUfmPMmquL7wZz5VJfnvjoKtwQ4XfbPF8zN8yVdIYcIGH8o/WhHbUc+vSprlxnA9qHySqAHAyeXPNbOW6QvFHXJj4iwbceU9+YI3GBRgGGR2bHUDG4+tDwAZJwPnU+5IzTMa0Lyy3oJViyynkDk77k+pJquQ67iRTydGX60cTpiYDtVdCx8cn1rcz2kDgWpNB8ai64XLCf43DJ9anO/wBluWAPyV8f/kqvMr8jzxg+mNqPtZYra/heYkWl0r2l2R0hmHhu3uuzD1Wob21kt57iGUASwStDJjkWU41D0PMe9TJNNpFVppN/YJq1EZrmCnOnnSAY7bVNDHs79gce9ck5aNbUdjbEZu4B38T/APW1D9B7UbwxQ3ELVTnBZ12558NqE7UlIc2cvP8AenZxnPKm4wQe9P8AQjI59aJdAvsaN9/p7UtOA5+g+VMJ5HvRNUgU7HBsEU4Ox+tRc6cAaXYVGz+CuJRQT39nMSFuUW4iPJQ8CsXznuv+Wt2skLDIYdsnYbDOxryv4bhFzxe1idS0Qiu2lAJHl8Fl5j1Ir0JuHXVrbBbC5aTwp2uI0usHWqwlfBLKOvtWpk+RUy31bYPbNVV3CramXnVDwO84xbXF6OMzXMUL6XSG4jJZ7i4YsXj1DIVQDtnGSO1aZPBudJhkV9QyB3HLNECnRRl9JYMMHNIpyw9aOvLQgkgYIyD7+9AKGVvauKYvkrQdGxTSRy7V1Rg8q6isHielsd6Yx2PoKRyc1FJKVRyRyFCIWzP8RYSTaexxWn4VF4VrGP7IrImVJ7xQOZlA+hrbW/kijX0qLKz1JaioonbZHJ7GsHfOkl/OTvhwv+EVtbqTRA55bZrz6OTxbss3JpXYn3NP8Ttsg8l9IsGdAAOwqIup6ipJWhEmOmB9ahYx5JA2PpXSez1capHExnnT4liLgfTao8oTgDPsKr7j4g4Nw8Tss0VxdRoyxwxh2QynYa3A04HM+b061kYuT0FkmoRuTCOL3UNhDPMTD44iJto5uUj5C/hBDEDrWBv+L3/EfCS5ZUMBz4UI0Rhv58dfma6+4g15cS3NzcCSeUYZ2PJeiqByA6CqmbLkMHTyg6GDbgc8Edq9CGJY1fbPFyeTLP6rSHTFWXHLfKkflaoYX0rOvLJDe22MCoXm1Dlgjt3ro2yT6jH0rHNOVgrG1CmNk3NNXfI7Ef6VJIPN8qZF+MjuCPnzpT/YdH9QmMYAqZBTFHKpV2quJDN2dcNpjP0oCE6fMVBUtj1B96JumwoFDw4C78m5+tJyO5j8KrGyecq8LdSMFT/QiirlmveGwX67z2gg4ffjmSqgi3nI9VGhj3Qfzbjqmry5yCNjy1D/AGpvD7v/AIfcyiWPxbaZJLS+t86fHtnILKD0YEBkPQqD0oMtpqQzDVOIKgZjvy70XGy6SnocetNuLcW7IY3MttMWa1nxjxEB3DDo68mHT2IJRRvnsev67UWN6szKr7HcL/8AivDx3ukX/FlaEkGGI7Ej6HFF8PIj4rwxjyF/bZz2MgHSobpNE86nmssin1IY0itsffRD2p/MDNNAFSLjlRxQMmcdkb1AX61C539BtUsuyoO5JPsKH5mhyP6CxrVjhv8AOngDlTB6U4c6UhjNd8HPYrLexlZTfumpGCgxLargEE5yCWI6dB89vBNri0t0DAj/AKDWE+D7+O1ur6ylEYXikEUMcjjzrPDMskaK3ZskY747VuJ4TCtq68p40k+ekA/vQ8qdMW42qILeRW4rcZ5tatvjGQSh2FSyW0OtnizDI2Rqi25jG68v0oKAgcWgPmxJaFct18gPX2qzYb00lYgu3RNF1EJUVTh4xvsMDKc/emS8PhuAJbVxkKuoZBGSM4xTyoqNYwGLxu0bnmydfccq05Ta6AnjkibS64IPyrqtlkhm0w3gjQnJ8fGUPYehrq7Y5Zf6a96rb6UrC4BwTmrJlNUvF3CaFB586xujcMOU0gHhNo0l7GTyXLH3NbhUAAHYYrNfD41ySyY5EDNafNQZKsuyfsV/F3ENnOf7DfqMViLRVMuPTNab4nuNFmV5FnRf1zWY4cwaR9+1XeMksbZ5+X2ypBbKNTe9I3gokjyOqRxqXkdzhUUcyTUjJuSSdzWP+M72c/ZOD2hOqVFurw5wNJOI1Y8scz8xS4x5OkerKfxxtgfGvig3Cy2nD4zDbklJJ5HRZZ17AZ2U88c6yjNO5LLNITjo4IHtyqZbT7zwoSpCnEtzIMjUOYiX9v6UUbSwj0LLJNJI5CjLkEk7eVUq3HidVVHkZc8W7btsqzJcocM2fRhvTWlL7cj2qeUWolaOGOVsEqdb5AIOOg/rRE3DV0R+HkT6NUkbHKg88Bjvms4Sd8TucFXLRVHnvzp8Zw1IwZWKsCGXYg7YPrUq29yIBdeE/wBmM32cTY8hlC69APfG9Tp1IqauI6QZ39KhQ4ZT/aqZjlPlUKjDL706faYiHTD12OKkz7VEu4Hc08bcqqRBIFuzyFRpkKvtS3JJbFcFwoJNTPc2y2KrGkTxyMhBxkZBIPp1qCcFpFf+dt8d6lX8IOx1ZC439M0rptg8s/QijkuUQE1GVj7e6SAPFMnjWsxBmhLaTqGwkib8rjofkcg0ssHglXjfxbadWa3mAxqA5o46Ov5h/Q5IDBlJB6E4oqzvDbrLHIgmtpsCeB8hWxydGG4cflI/UHBSpU9D3G0RJIUuYJFGWjnidfUq4Ioriy6eIcSG213cfh5fjJwKiuEtYZYZrSRpYWcSrHMpWeMKwbRKVGg+4PyFTcUms7m9vrizEq2k9zLLAtxp8VVdi2l9JI79ayKbbOlqqAk9afjFMG1SDBI7Dc/KmxQEuyKY5fH8qgfXeoutKzZLnu1IOdTydyKIqojtqcDim71wB9a5ownV9LBgSCCrArsQQcgivWOD3q8V4T8LSuczCSawus8zLFJEhJ9wQfnXkVbL4MvmWSexJ8sbrxOP0ZXhjkHzAU/Kk5Fqzi5mEkHFLZSf4QniI33CM677VcpJHIgOd+tVHFQBx548r/566iXvlpGx+9QrcTWs5ilyAGw3+tMUkJjj5RZeEg8jSqqnrUUZV1V1OQamj05ANNJqrscyoRg4I7GuqUohwa6uNNc4Zdz0rMcSnV52/sjFauR1EcjHGymsNdOHnkI/M+APfYUub0eh4q9mzU/D6Ktrr/nJNXQIoHh8YhtIVA/KP2osEda82crY5u3Zk/iyXU1tEMfidj/0jG9VPC1AErnGxP6CpPiabXxBYwfwR7+7GhrQMsLkE716mP1wohh7+SWBk1dBWG4+GPEuJzO6RIkkaB23yVjVQdtzpH4RWuBb1rDfEcc9xxe4hwfCj0OfVnUMSa7xX7Ms/Ir/ABq3qynFw5LJZhhkaTNL5pSOyg7Ae1PS1nQNKdTTsuEdj5UzsWLHr2/2ojNpZx7kNJ0Uf1NCGaedlyzac7DoPlXoUlp7Z4nKT3FUgm3t4LZQ2rXKfzAbKe61MsULEktLkncnHvvmomKRqgO554pFZpDucL0ApqpKiduU3bZJPYwXGDqUsuMMds4PI9xVx8Qz2F3wWCCziMb293DKtvHEFVEKOraPD8uBkVVDcgDsOVX/AMNcBuuOXLPI8kXDLWQpcyxHRJPIOcELdAPzt8h6TeRDHXKRd4mXMrxx2n/TBj8PL0puk6lr2e/+BPhm4zJFbS25BADwTSAfNXLA1Vt/4ccGxqHEeIo6k6wy27LgjAxhM1B80X2el8EkecICVHpT8V6Pa/BPAYZMTC9uBGy+Isk5XbO7aYlXpyoyXgHwVDpFvwuB21EAXDSu/TBYOxG/bFNfmQihUfx+Sbs8fm0l9iCRzA3P0Fa74S+Gr2/vuE8Qu7MDg8N7D4pvD4S3TZ8scKPu++NW2NvlXoxe14dbubLhVmkgA8kUccSsQOulf6157x74m43cXMSzLdW/gOkkShdOhkYOrJ0wCBy/rUyzub4wXZdHxYRjzyS0h3xlw6SHj1xdLEotpyZQYlVYxIoCacDb/wDlZItGCwLAjrXptrc2/wAVcIEkgD3ilob1NOkiTmCAOQYeYf7V59xfg0vCZyk5cQuzeBIVJDDnpJ7im4M7X+OXaJvK8dN/LDplTOo1ak3Q4G3Q4psYLHGem1TYtwrYlbONgQMEjcZqAHBzmmte1iYu40gqMEjTjdTkf7CmOUbVoGFB2HL9KYHccicHbn+1IhxrHzpnJdC+DWzqdnCSN/Zx9dqbXSZEar1Zs/IVjdILtkFOUjfPauKONypFcqqfxHA+p+lISdjm1RJqU7AjJ77U3zD1pSg/FHggdDuffekDHoFyOeMiif8A2Aq+hTg4wd6vfhedIeJkN/8AMWF/Ap/9zw/FX/LiqLIOCNiP+9qntpjDLBMpIaKRXBHPY70uStUEbjj1xLB8VN9592vFLWULpXGmXwXI5etX3HOGl9U8S7qW2A5isbx+fxeKi4386WE3T8sKD+lenPhwdQyGGT8xmoZSlFoe0kk0Yzh94Y28Fycchn9quUkORnkeRqp4vw828pnjBCE5OOh71Jw67WRfDkOGGMH/AEq7HPkiPNj/AOSLsOMCuqFdsV1NJjWcVl8C2YZ3bas3bIJrqBMbFwSPQb1acWeWZlQD8O9Q8FtpWvQxXIjUn2JNIyXR6vjpRxtmpVQqqo6AU4jCsc8gadpc/lqO48RIJm0nZT+1QKDbBcqPN+KuZr+8fO3iFR7LtR8C+HYxEKNRIoOezaRncS+d3Zjy/MasmQJBBEW3UAn1r18i4wSJPE9s1g4kcflFUvHuGy3sT3VqP+cjjCsi/wDrxrvpH9ob478qvNIxzrtA71LFuDtHsZMcckXGSPJhF4jHUxLA7hsgj3B3FFKI4hsASNvnXod7wrhvEF03MYLj8EsZ0TJ7OP2NZXiHwxf2Yaa1l+2W67sunTcoO+geVvlj2q/Hnj99ni+R4WRdbRRkMxyx3qVFkPIHFcrwj8TqTywCOY70XHND0OwA+VVqmeY7X0DzubSEsCPHkyIs9D3+Veo8Axwzg9jaxuuY4gXP5jJIdTsfcmvHLm6NxOX30KdKDsorR8O+I5oIVglkZkXZS6klRjGzKc/pXj+Xkcn69I93wsSxx9u2eprez/mAaPlkGiY7h3IVQpLK2QDliee4rGcM43Dc+VZonfynRqIY6e6HBq6t72aeQvMY2AIChFACdBjHm996gWSns9TimtFpf362MVvJIumVnKBmUmPQByY1TPxHhN/KDdWSyHOrXE5XkcArjff3q2MzhY4yWm8zN97h4iO6kjNCy2FheSSeHGkF0q63aMA8xnzLyxWSfJjI0lRI97waKDQoUbYCvqJxnHM5quurb4d4lCRcRxzRA/kcERty8rKcj61BxLgfFngMtrJDNLHg+EV0GTHRXziswttKZJjcRXNrPnEgQmJ1bsVHlP0rE32DUXrs0ljwS3+G7g8Vhe5+x38K2oiYxv4TOwkSRs+Y8iB2zQ3H5uFcTs5rdwz5HlfyhhIOTqO4/wC+dUPEZOMmGO0e/kkhhIeNDhGORgE6e1C2olYKjkEqcMQcjnRTk5PlYCUY+iWjJ3lncWUvhzAeYao2Ugq655jFDZxW8ubGzurSWAwDxirtGw3ZZeSkHt0rCsrKWVhgqSpHYg45VZhyOaIcsODE1U4EggkHB69KbXFi2ATsNh6VQm0IC0hQgHxBk8v5frUQaSGRwCDjYjn67VGjtG2VPPYjoRTpnUuHQ7EAkHv2pjmq1oWou6e0woPHMh5awOXXNBZGog7HNPyDuux9KjYsTludZOVpHY4JWSB2U9D8hTHIZiQMU3NdS5SbQxRSdjhUiKWZEH53Rf8AEwFRCp7V0W4tHkJ8NLiF5DjOEVwx2oLNov8AjO09uP8A6K3Hr5Qy16lazJPbW8inOYo8++kV5ZxdkkewmjYNG8LKjg7MEcnb61quBcT8IxW8reR0TQc7cuVSzxudtBykowimaW5gjnjeNwDkHGfWsbdWkthcEAELqyh/pW3ODv0PL1oC/sku4XH5wCVPWl4snB0zSts7wSoAfxjY5rqpfvrWZlYYZTgjuK6vSUkySWF3o315OPFfPQ4q2+HhqS4lx+bSO+1YmXiEru5IHMmtvwNXj4fATs0gDn571NkyUj0ZQ4QSLzNA8ZuBb8NvJAQGEbBc9yMVLqbvVB8VXDxWCRg58WRVx360vFLlNIlyag2ZWGclgGIOSBVtMNITO+VBqitTI9xbppB1SIP1rQX0oSQIFHlUA8udejn6E/j75NoG27Uw5G1I05PQD2pmvVneoj20SClBwy+4qLJ709Bkrk7AiuOfWyG/4Jwi8aRp7CAySrvMkYSbV0YSKM5rIcW+FbywjE1nJJcQPqBWTAlX5jANb29uHDIEIwFGaliH2vhU6t5mgnD+uk7UGXLPGriZj8fHlVTR4c6PGxVgVYcwwIP0NF2Vtc3f23wnRfsdlPfSeJqy0cRUFUwOe4r0a94PZXQzLCpPfG9Z7iHDoeE29zNApVZbW6tJDzJWdMDPzAqeHmRm6aphZfx8sa5J2jKpcyowYMQVIIIOCCOoIrW8H+KBGYY7wlceVpkGQQfzOvfv/wB5xQOKeHA5c6rljUtMghkcXaPboeI20cN5O8niRCLVC6glJXLBQcL032qnueOQi6QT2UiyRMXDHxrdypHMqTnHvtWF4N8Q3vDHjQs0toWUvbscrsc5j1bA1uvFh4xcjiFun26J44o5wmC0CgABSG3HqCelRzg4no48qmqSGj4vMDt4hia33xh1WVB02zg/SpPib4i4NeQ8GaxCyOUMk7JsygjGhutDcX+E7LiAhns4mjnj3kjhGBLEOhwNvQ1mrqbg9iFt9LJKhMcqS/iTTtg8zRL9aBdxdsOe6hlwyQjVjIaSQbZ2G2KfHEu0rG3BA1YDDBHp1qjNzbvho3i0dFV1BOO4JzREMpDa2CBVXP4lAxnPOu+NinkVlzHIiOhJGZWUnnsqnnisXxuFYOJXgUERyuZ48jGVc/65rQpfW/iB3Ksy8l1KB7ZzVLxuX7T4Vw0sbyhmUrHjSiEZAGD0/rT8KcX/AOiMslKJTE03NLmu2qolOzSV1dWGjlJFK2+KbXE1t6oyt2dmuzSV1CELSg4puaWsOCY7iQJHETmNHZ1H8pcAN+wrVRowtrCdXx4sKOD2Ybc6xwrU8Fvba5tk4bMdFxHkWrE+WUZyI8/zDp39+ZQ0xWZcoUjb8H4kLqJYXb75Bg1a+besBBPLZzrIgIZGww9uYrcWV1FdwJMhzkDUO1R58XB8l0ZhyclTKzivDzNiaIAOOY75rquiB2zXUMcziqHmaRJZHjXQ/ndVzjucV6ZbqI4IEA/Cij9KxXC1afiFonQPrOw/LvW+C4222osqspzydpDQSayHxhK5exiUZADu2OXYVtkA22rC/EriTiZjHKOJFI9W3pvi4/8AImef5EvQqeFFmvrUFMBWLEn0FWl8JXnlYLtnbcUHaoEkLDYhOdSyu2fxGrPIauhv4+Hq5ELI3alCnAphkbvSeIeVSHsUycIxGw396ekcxKqANyMb1ArtkYNEK5BRs8mB/WuBknQl1FKspU4yFGaM4MxWaeCUgRTxlSc8m5UHcyl5Wb0FDxzNFNDJ5tKSozaeenPmA+WaXkjdoLFaRYyx+HJJGw3UkZJxy9Ko+P2U8/C78LDIwETPkIx/DvtgV6TIkMipcW6pplRWDKAGIIyDn/ehri3knt5Y2DEPGVOTnORjGTU8fBp8rMyflE48OJ81U4DOMb5qfiEBtr6/tyNJhuZo8EYwAxxQ6sRXo1Z5KZIFJBxzzyrRcM+JbnhfB7jhqQQ5ku3uhMxYSZdFTBA54x5T0zWaDkHP71zuznJPKslFNUMhNwdxN3wT40HDNc+Z5pZFMcttOw8I53Dxyb49RjrWO4pfS8R4hfX0pBkuZmkfSMDfbAoLNdQxgk9BTyymqZ21KN+ZOOw5V1JtTkicXyim8iPpXE1w7fT3rGchDzpaQ0uRnYVgR1dtSZrqw4XNJXV1ccdSgZpK7etOHYNdvSAt0Jp2WrQThkdKepOQRnOQRg4II7UgLdhTskYOn6VriZZp7S5ub63LywyGaEaXuFX7uYKB+M9H5e/PnVtwniMlnKqn+DIwDenrWRsuK3FmW0klHGJE/LIOzD9jV1HNDPGs8WfDckYPNWHNG9RRUpriyaceEuSPRwVkVGVsq2CMV1ZzgfExtaSty3jJPNe1dXl5MbjKiuElJWaP4bgJvZJSu0ce3bJNbENWd+FMaL7++v8AlFaoAdhTpfsMzNuZEHC777V5vxSdpOJ38uxVpio3/lGmvTyBpfYcjXlF0B9pu9h/Hm/zGq/EXs2QeVLSQbZfexXGGXxBjAJ6UjQzHctH/iqDh4H/ADHuKI/mos/7HoeB/tIaLfOxkj+tL9nXrIg+dR/mpW/pU1npU/6TCKMEfeIfrUgiQkZkUZO3OhxUw5D3FaY067H3EUavjWM4GdqH0RDm36UTdfxR/cWhX5mufZ2O+KNJwG9R4zZF8yRhvC6FoSclR7H9KtJAVJXbPMnmPlWO4TkcSsMbffdP7prc3IAhhwMeQcvlRxejzPKgoz0fP3xpb/Z/iLiYA2kMcw6fiXBrO1tP/EUAccj252cX+Zqxy9famxViL0MOwA786bT3/F8hTe9BLsYuhDtXUlKP9aw46u3rqc3JfajqzBApP+1doIpy040xQVAuTToiINJUjU00DjQSlY2urq6lhHUlLXdvcVpx1PwAOW/WkX8QpRyaiigWOUCnYpE5Gnr1p6SEtjcV1cedNk/LQydI1KziVJ6k9xR/DLw28jQOfubgorZ/K42V/wChoCPkaa3M/wB0/tS+thNJrizW6pIpBjKurHfqD6V1RoSYLAkkk2kJJPMnQNzXUx0RpN/Z/9k=" alt="San Óscar Romero">
+                    <p class="image-caption">San Óscar Romero - Mártir y defensor de la vida en El Salvador</p>
+                </div>
+            </div>
+            
+            <h3>Testimonios de Esperanza</h3>
+            <p>En medio de la violencia, surgen historias que encarnan el Evangelio de la Vida:</p>
+            
+            <div class="two-column">
+                <div>
+                    <h4>1. Madre de Víctima Perdona</h4>
+                    <p>Doña María, cuya hija fue asesinada, perdonó al asesino y ahora trabaja en programas de prevención de violencia.</p>
+                </div>
+                <div>
+                    <h4>2. Ex Pandillero Convertido</h4>
+                    <p>José, antiguo miembro de la MS-13, encontró en la fe católica un nuevo camino y ahora ayuda a otros a salir de las pandillas.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Recursos -->
+        <section id="recursos">
+            <h2>Recursos Adicionales</h2>
+            
+            <div class="two-column">
+                <div>
+                    <h3>Documentos Oficiales</h3>
+                    <ul class="document-list">
+                        <li><a href="https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_25031995_evangelium-vitae.html" target="_blank">Texto completo de Evangelium Vitae</a></li>
+                        <li><a href="https://www.vatican.va/archive/ccc/index.htm" target="_blank">Catecismo de la Iglesia Católica</a></li>
+                        <li><a href="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19800505_eutanasia_sp.html" target="_blank">Declaración sobre la Eutanasia</a></li>
+                        <li><a href="https://www.iglesia.org.sv/" target="_blank">Conferencia Episcopal de El Salvador</a></li>
+                        <li><a href="http://www.romero.catholic.net/" target="_blank">Centro Pastoral Monseñor Romero</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Organizaciones en El Salvador</h3>
+                    <ul class="document-list">
+                        <li><a href="https://www.caritas.org.sv/" target="_blank">Cáritas El Salvador</a></li>
+                        <li><a href="https://www.fundacionunmundomejor.org/" target="_blank">Fundación Un Mundo Mejor</a></li>
+                        <li><a href="https://www.hombresdemisericordia.org/" target="_blank">Hombres de Misericordia</a></li>
+                        <li><a href="https://www.pastoralsocial.org.sv/" target="_blank">Pastoral Social</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>Bibliografía Especializada</h3>
+            <ul class="document-list">
+                <li>"La violencia en El Salvador: Una lectura desde la fe" - Conferencia Episcopal, 2016</li>
+                <li>"Evangelium Vitae y la realidad salvadoreña" - UCA Editores, 2018</li>
+                <li>"Teología de la Vida en Romero" - Colección Teológica, 2019</li>
+                <li>"Jóvenes y violencia: Desafíos pastorales" - Departamento de Juventud, 2020</li>
+            </ul>
+            
+            <div class="media-container">
+                <div class="video-container">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/j43sHPAHN44" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+                            </div>
+                <p class="image-caption">Documental sobre la labor de la Iglesia contra la violencia en El Salvador</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('fa-times');
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
